@@ -22,7 +22,7 @@
         <dependency>
             <groupId>net.java.dev.jna</groupId>
             <artifactId>jna</artifactId>
-            <version>4.5.1</version>
+            <version>5.0.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -45,14 +45,6 @@
                         <goals>
                             <goal>shade</goal>
                         </goals>
-                        <configuration>
-                            <relocations>
-                                <relocation>
-                                    <pattern>com.sun.jna</pattern>
-                                    <shadedPattern>net.arikia.dev.jna</shadedPattern>
-                                </relocation>
-                            </relocations>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
